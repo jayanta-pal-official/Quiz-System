@@ -113,7 +113,7 @@ class QuestionController extends Controller
             if($questions-> count()< $nextq){
                 return view('end');
             }
-            if($i== $nextq){
+            if($i== $nextq){                
                 return view('ansDesk')->with(['question'=>$question]);
             }
         }

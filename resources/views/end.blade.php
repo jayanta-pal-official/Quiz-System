@@ -4,7 +4,7 @@
 <div class="container" style="padding-top: 35vh">
     <div class="row">
         <div class="col-md-5"></div>
-        <div class="col-md-4">
+        <div class="col-md-4 " style="color: black">
             <label>Correct : <small>{{Session::get('correctans')}}</small></label>&nbsp;&nbsp;
             <label>Incorrect : <small>{{Session::get('wrongans')}}</small></label>&nbsp;&nbsp;
             <label>Result : <small>{{Session::get('correctans')}}/{{Session::get('correctans') +
