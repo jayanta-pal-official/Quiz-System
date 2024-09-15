@@ -17,7 +17,11 @@
 <body>
     <nav class="navbar   navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Quiz System</a>
+            @if (Auth::check())
+            <a class="navbar-brand" href="{{ route('home')}}">Quiz System</a>
+            @else
+            <a class="navbar-brand" href="{{ route('index')}}">Quiz System</a>
+            @endif
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">

@@ -3,7 +3,7 @@
 @section('background-image', asset('/image/bg.jpg'))
 @section('main-section')
 <div class="container">
-    <h3 class="text-white text-center pt-5">welcome : {{ Auth::user()->name }}</h3>
+    <h3 class="text-white text-center pt-5 ">welcome : <b>{{ Auth::user()->name }}</b></h3>
     <div class="row justify-content-center pt-5">
         <div class="col-lg-4">
             <div class="row">
